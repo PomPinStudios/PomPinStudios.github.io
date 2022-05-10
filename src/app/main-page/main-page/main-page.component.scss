@@ -1,0 +1,14 @@
+.btnPers{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3%;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: transparent;
+    color:#0b0b0bd2;
+    transition: 0.3s;
+}
+
+.btnPers:hover{
+    color:#7a3bc8;
+}
