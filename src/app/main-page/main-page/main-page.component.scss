@@ -1,14 +1,63 @@
-.btnPers{
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 3%;
-    border-radius: 50%;
-    background-color: transparent;
-    border-color: transparent;
-    color:#0b0b0bd2;
-    transition: 0.3s;
+.fondoStatic {
+  background-image: url(../../../assets/fondoStatic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
-.btnPers:hover{
-    color:#7a3bc8;
+.logoInicio {
+  z-index: 50;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.logoInicio img {
+  width: 50vw;
+}
+
+.intro {
+  background-color: #1e1e1e;
+  display: grid;
+  padding: 1.2vh 0px;
+}
+.intro span {
+  font-size: 20px;
+  align-self: center;
+  justify-self: center;
+  font-weight: bold;
+}
+@media(min-width:779px){
+    .intro span {
+        font-size: 28px;
+      }
+}
+.intro span:nth-child(1) {
+  color: #fbc36a;
+}
+.intro span:nth-child(2) {
+  color: #b0771c;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #541780;
+    text-decoration: none;
+}
+
+.bgPers{
+    background-color: #1e1e1e;
 }
