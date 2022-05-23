@@ -8,7 +8,13 @@
 }
 
 .imagen img {
-  width: 250px;
+  max-height: 200px;
+  max-width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
 }

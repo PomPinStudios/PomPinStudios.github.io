@@ -16,6 +16,6 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   imports: [CommonModule, RouterModule],
-  exports: [MainPageComponent, NavbarComponent, ContactoComponent, FooterComponent],
+  exports: [MainPageComponent, NavbarComponent, ContactoComponent, FooterComponent, NoticiasComponent],
 })
 export class MainPageModule {}
