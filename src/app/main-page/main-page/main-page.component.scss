@@ -16,7 +16,6 @@
 .logoInicio img {
   width: 50vw;
 }
-
 .intro {
   background-color: #1e1e1e;
   display: grid;
@@ -28,10 +27,10 @@
   justify-self: center;
   font-weight: bold;
 }
-@media(min-width:779px){
-    .intro span {
-        font-size: 28px;
-      }
+@media (min-width: 779px) {
+  .intro span {
+    font-size: 28px;
+  }
 }
 .intro span:nth-child(1) {
   color: #fbc36a;
