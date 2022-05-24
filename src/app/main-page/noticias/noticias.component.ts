@@ -1,3 +1,4 @@
+import { NullVisitor } from '@angular/compiler/src/render3/r3_ast';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,13 +7,91 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./noticias.component.scss'],
 })
 export class NoticiasComponent implements OnInit {
-  noticias = [ //? CATEGORIAS: Interfaz, Jugabilidad, NPC, Diseño, General
+  noticias = [
+    //? CATEGORIAS: interfaz, jugabilidad, npc, diseño, general
+    {
+      titulo: 'SHH!! escucha.',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '22/04/2022',
+      cat: 'diseño',
+    },
+    {
+      titulo: '¡No se me olvida!',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '05/05/2022',
+      cat: 'jugabilidad',
+    },
+    {
+      titulo: 'Un sitio donde vivir en paz',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '05/05/2022',
+      cat: 'diseño',
+    },
+    {
+      titulo: '¡Vaya interiores!',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '19/04/2022',
+      cat: 'diseño',
+    },
+    {
+      titulo: 'Un poco de curacion, que alivio.',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '10/04/2022',
+      cat: 'jugabilidad',
+    },
+    {
+      titulo: '¿vamos de compras?',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '10/04/2022',
+      cat: 'jugabilidad',
+    },
+    {
+      titulo: '¡Me lo guardo!',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '07/04/2022',
+      cat: 'interfaz',
+    },
+    {
+      titulo: '¿Hablamos un rato?',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '07/04/2022',
+      cat: 'interfaz',
+    },
+    {
+      titulo: '¡Menu!',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '04/04/2022',
+      cat: 'interfaz',
+    },
+    {
+      titulo: '¡Ya cayo la noche!',
+      parrafo: '',
+      src: '../../../assets/tavern.png',
+      fecha: '03/04/2022',
+      cat: 'diseño',
+    }, //!--------------------------------------
+    {
+      titulo: '¡Hogar dulce hogar!',
+      parrafo: 'Ya hemos empezado con el diseño de los establecimientos.',
+      src: '../../../assets/tavern.png',
+      fecha: '28/03/2022',
+      cat: 'diseño',
+    },
     {
       titulo: '¡Estoy vivo!',
       parrafo:
         'Es importante saber si estas a punto de morir o no, o cuanta experiencia te falta para subir de nivel, para ello se han incluido indicadores de vida y de experiencia.',
       src: '../../../assets/vidayexp.png',
-      fecha: '21/03/2022',
+      fecha: '25/03/2022',
       cat: 'interfaz',
     },
     {
@@ -64,6 +143,19 @@ export class NoticiasComponent implements OnInit {
       cat: 'general',
     },
   ];
+
+  noticiasMostrar = this.noticias;
+
+  //? CATEGORIAS: interfaz, jugabilidad, npc, diseño, general
+  filtrarNoticias() {
+    const interfaz = document.getElementById(
+      'btncheck1'
+    ) as HTMLInputElement | null;
+
+    if (interfaz?.checked)
+      this.noticiasMostrar = this.noticias.filter((x) => x.cat === 'interfaz');
+    this.noticiasMostrar = this.noticias.filter((x) => x.cat === 'interfaz');
+  }
 
   constructor() {}
 

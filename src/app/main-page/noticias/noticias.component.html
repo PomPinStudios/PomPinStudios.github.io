@@ -1,14 +1,59 @@
 <div class="fondoStatic pt-1 pb-2">
   <div class="container bg-page px-5 pt-4 pb-5 my-3 rounded">
     <div class="filtros">
-      <button class="btn rounded-pill">Interfaz</button>
-      <button class="btn rounded-pill">Jugabilidad</button>
-      <button class="btn rounded-pill">NPC</button>
-      <button class="btn rounded-pill">Diseño</button>
-      <button class="btn rounded-pill">General</button>
+      <input
+        type="checkbox"
+        class="btn-check"
+        id="btncheck1"
+        autocomplete="off"
+        (click)="filtrarNoticias()"
+      />
+      <label class="btn btn-outline-light rounded-pill" for="btncheck1" 
+        >Interfaz</label
+      >
+
+      <input
+        type="checkbox"
+        class="btn-check"
+        id="btncheck2"
+        autocomplete="off"
+      />
+      <label class="btn btn-outline-light rounded-pill" for="btncheck2"
+        >Jugabilidad</label
+      >
+
+      <input
+        type="checkbox"
+        class="btn-check"
+        id="btncheck3"
+        autocomplete="off"
+      />
+      <label class="btn btn-outline-light rounded-pill" for="btncheck3"
+        >NPC</label
+      >
+
+      <input
+        type="checkbox"
+        class="btn-check"
+        id="btncheck4"
+        autocomplete="off"
+      />
+      <label class="btn btn-outline-light rounded-pill" for="btncheck4"
+        >Diseño</label
+      >
+
+      <input
+        type="checkbox"
+        class="btn-check"
+        id="btncheck5"
+        autocomplete="off"
+      />
+      <label class="btn btn-outline-light rounded-pill" for="btncheck5"
+        >Todas las noticias</label
+      >
     </div>
     <div
-      *ngFor="let noticia of noticias"
+      *ngFor="let noticia of noticiasMostrar"
       class="noticia container bg-dark p-5 mt-3 text-light rounded"
     >
       <div class="row">
@@ -28,3 +73,20 @@
     </div>
   </div>
 </div>
+
+<!--
+  <input type="checkbox" class="" (click)="filtrarNoticias('interfaz')" value="Interfaz" />
+        
+      <button class="btn rounded-pill" (click)="filtrarNoticias('jugabilidad')">
+        Jugabilidad
+      </button>
+      <button class="btn rounded-pill" (click)="filtrarNoticias('npc')">
+        NPC
+      </button>
+      <button class="btn rounded-pill" (click)="filtrarNoticias('diseño')">
+        Diseño
+      </button>
+      <button class="btn rounded-pill" (click)="filtrarNoticias('todos')">
+        Todas las noticias
+      </button>
+-->

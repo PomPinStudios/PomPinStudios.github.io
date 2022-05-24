@@ -23,16 +23,10 @@
   background-color: rgb(24, 27, 30);
 }
 
-.filtros > button{
+.filtros > label{
   margin-right: 10px;
   padding: 0px 20px;
   border: 2px solid #aa8ad0;
   font-weight: 600;
   color: #aa8ad0;
-  background-color: transparent;
-  transition: 0.2s;
-}
-.filtros > button:hover{
-  background-color: #aa8ad0;
-  color: white;
 }
