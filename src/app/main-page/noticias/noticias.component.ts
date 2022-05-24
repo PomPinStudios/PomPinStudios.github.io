@@ -146,15 +146,42 @@ export class NoticiasComponent implements OnInit {
 
   noticiasMostrar = this.noticias;
 
+  filtrosSeleccionados: string[] = [];
+
   //? CATEGORIAS: interfaz, jugabilidad, npc, diseño, general
   filtrarNoticias() {
     const interfaz = document.getElementById(
       'btncheck1'
     ) as HTMLInputElement | null;
+    const jugabilidad = document.getElementById(
+      'btncheck2'
+    ) as HTMLInputElement | null;
+    const npc = document.getElementById('btncheck3') as HTMLInputElement | null;
+    const diseño = document.getElementById(
+      'btncheck4'
+    ) as HTMLInputElement | null;
+    const general = document.getElementById(
+      'btncheck5'
+    ) as HTMLInputElement | null;
 
-    if (interfaz?.checked)
-      this.noticiasMostrar = this.noticias.filter((x) => x.cat === 'interfaz');
-    this.noticiasMostrar = this.noticias.filter((x) => x.cat === 'interfaz');
+    this.filtrosSeleccionados = [];
+
+    if (interfaz?.checked) this.filtrosSeleccionados.push('interfaz');
+    if (jugabilidad?.checked) this.filtrosSeleccionados.push('jugabilidad');
+    if (npc?.checked) this.filtrosSeleccionados.push('npc');
+    if (diseño?.checked) this.filtrosSeleccionados.push('diseño');
+    if (general?.checked) this.filtrosSeleccionados.push('general');
+
+    let obj = [];
+
+    for (let i = 0; i < this.filtrosSeleccionados.length; i++) {
+      for (let j = 0; j < this.noticias.length; j++) {
+        if (this.noticias[j].cat === this.filtrosSeleccionados[i])
+          obj.push(this.noticias[j]);
+      }
+    }
+
+    this.noticiasMostrar = obj;
   }
 
   constructor() {}
