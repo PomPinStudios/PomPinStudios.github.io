@@ -166,22 +166,33 @@ export class NoticiasComponent implements OnInit {
 
     this.filtrosSeleccionados = [];
 
+    let i = 0;
+
     if (interfaz?.checked) this.filtrosSeleccionados.push('interfaz');
+    else i++;
     if (jugabilidad?.checked) this.filtrosSeleccionados.push('jugabilidad');
+    else i++;
     if (npc?.checked) this.filtrosSeleccionados.push('npc');
+    else i++;
     if (diseño?.checked) this.filtrosSeleccionados.push('diseño');
+    else i++;
     if (general?.checked) this.filtrosSeleccionados.push('general');
+    else i++;
 
-    let obj = [];
+    if (i < 5) {
+      let obj = [];
 
-    for (let i = 0; i < this.filtrosSeleccionados.length; i++) {
-      for (let j = 0; j < this.noticias.length; j++) {
-        if (this.noticias[j].cat === this.filtrosSeleccionados[i])
-          obj.push(this.noticias[j]);
+      for (let i = 0; i < this.filtrosSeleccionados.length; i++) {
+        for (let j = 0; j < this.noticias.length; j++) {
+          if (this.noticias[j].cat === this.filtrosSeleccionados[i])
+            obj.push(this.noticias[j]);
+        }
       }
-    }
 
-    this.noticiasMostrar = obj;
+      this.noticiasMostrar = obj;
+    } else {
+      this.noticiasMostrar = this.noticias;
+    }
   }
 
   constructor() {}
