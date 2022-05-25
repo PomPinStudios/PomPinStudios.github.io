@@ -4,67 +4,67 @@
       <input
         type="checkbox"
         class="btn-check"
-        id="btncheck1"
+        id="Interfaz"
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-light rounded-pill" for="btncheck1"
+      <label class="btn btn-outline-primary rounded-pill" for="Interfaz"
         >Interfaz</label
       >
 
       <input
         type="checkbox"
         class="btn-check"
-        id="btncheck2"
+        id="Jugabilidad"
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-light rounded-pill" for="btncheck2"
+      <label class="btn btn-outline-danger rounded-pill" for="Jugabilidad"
         >Jugabilidad</label
       >
 
       <input
         type="checkbox"
         class="btn-check"
-        id="btncheck3"
+        id="NPC"
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-light rounded-pill" for="btncheck3"
+      <label class="btn btn-outline-warning rounded-pill" for="NPC"
         >NPC</label
       >
 
       <input
         type="checkbox"
         class="btn-check"
-        id="btncheck4"
+        id="Diseño"
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-light rounded-pill" for="btncheck4"
+      <label class="btn btn-outline-success rounded-pill" for="Diseño"
         >Diseño</label
       >
 
       <input
         type="checkbox"
         class="btn-check"
-        id="btncheck5"
+        id="Desarrollo"
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-light rounded-pill" for="btncheck5"
-        >Todas las noticias</label
+      <label class="btn btn-outline-info rounded-pill" for="Desarrollo"
+        >Desarrollo</label
       >
     </div>
     <div
       *ngFor="let noticia of noticiasMostrar"
-      class="noticia container bg-dark p-5 mt-3 text-light rounded"
+      class="noticia container bg-dark p-5 mt-3 text-light rounded border-start {{ noticia.color }}"
     >
       <div class="row">
         <div class="info col-12 col-md-6 col-lg-7 col-xl-8">
           <h3>{{ noticia.titulo }}</h3>
           <p class="fecha text-muted">
-            {{ noticia.fecha }}
+            {{ noticia.fecha }} • <label class="linkInNoticia" for="{{ noticia.cat }}">{{ noticia.cat }}</label>
           </p>
           <p class="pt-1">
             {{ noticia.parrafo }}
@@ -77,20 +77,3 @@
     </div>
   </div>
 </div>
-
-<!--
-  <input type="checkbox" class="" (click)="filtrarNoticias('interfaz')" value="Interfaz" />
-        
-      <button class="btn rounded-pill" (click)="filtrarNoticias('jugabilidad')">
-        Jugabilidad
-      </button>
-      <button class="btn rounded-pill" (click)="filtrarNoticias('npc')">
-        NPC
-      </button>
-      <button class="btn rounded-pill" (click)="filtrarNoticias('diseño')">
-        Diseño
-      </button>
-      <button class="btn rounded-pill" (click)="filtrarNoticias('todos')">
-        Todas las noticias
-      </button>
--->

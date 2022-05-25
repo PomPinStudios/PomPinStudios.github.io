@@ -11,5 +11,19 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  audioControl()
+  {
+    const myAudio = document.getElementById(
+      "audio"
+    ) as HTMLAudioElement | null;
+
+    if(myAudio?.paused) {
+        myAudio?.play();
+    }
+    else {
+       myAudio?.pause();
+    }
+  }
+
 
 }
