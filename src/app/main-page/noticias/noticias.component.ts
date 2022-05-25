@@ -10,9 +10,9 @@ export class NoticiasComponent implements OnInit {
   noticias = [
     //? CATEGORIAS: Interfaz, Jugabilidad, NPC, Diseño, Desarrollo
     {
-      titulo: 'SHH!! escucha.',
+      titulo: 'SHH!!! Escucha',
       parrafo:
-        '¿Aquien no le gusta tener musica de fondo o escuchar increibles efectos al realizar una accion? estamos trabajando en la seccion de sonido del juego para darle mas vida y presencia a cada accion.',
+        '¿A quien no le gusta tener música de fondo o escuchar increíbles efectos al realizar una acción? Estamos trabajando en la sección de sonido del juego para darle más vida y presencia a cada acción.',
       src: '../../../assets/altavoz.png',
       fecha: '22/04/2022',
       cat: 'Diseño',
@@ -21,7 +21,7 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: '¡No se me olvida!',
       parrafo:
-        'No queremos que cada vez que entres al juego tengas que empezar la historia de nuevo, para ello hemos creado una opcion de guardar partida y cargar partida.',
+        'No queremos que cada vez que entres al juego tengas que empezar la historia de nuevo, para ello hemos creado una opción de guardar partida y cargar partida.',
       src: '../../../assets/guardar.png',
       fecha: '05/05/2022',
       cat: 'Jugabilidad',
@@ -30,7 +30,7 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: 'Un sitio donde vivir en paz',
       parrafo:
-        'Necesitabamos un sitio principal donde transcurra la historia, ese sitio sera el pueblo principal de Razor.',
+        'Necesitábamos un sitio principal donde transcurra la historia, ese sitio será el pueblo principal de Razor.',
       src: '../../../assets/pueblo.png',
       fecha: '05/05/2022',
       cat: 'Diseño',
@@ -46,18 +46,18 @@ export class NoticiasComponent implements OnInit {
       color: 'border-success',
     },
     {
-      titulo: 'Un poco de curacion, que alivio.',
+      titulo: 'Un poco de curación, que alivio.',
       parrafo:
-        'Pero... ¿si me bajan la vida que hago?, hemos añadido las pociones, si te falta vida, ahora podras curarte.',
+        'Pero... ¿Si me bajan la vida que hago?, hemos añadido las pociones, si te falta vida, ahora podrás curarte.',
       src: '../../../assets/pocionCura.png',
       fecha: '10/04/2022',
       cat: 'Jugabilidad',
       color: 'border-danger',
     },
     {
-      titulo: '¿vamos de compras?',
+      titulo: '¿Vamos de compras?',
       parrafo:
-        'Ya hemos dearrollado la mecanica de comercio, con la que podras comprar y vender objetos con los que poder interactura.',
+        'Ya hemos desarrollado la mecánica de comercio, con la que podrás comprar y vender objetos con los que poder interactuar.',
       src: '../../../assets/tienda.png',
       fecha: '10/04/2022',
       cat: 'Jugabilidad',
@@ -66,7 +66,7 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: '¡Me lo guardo!',
       parrafo:
-        'Conseguimos objetos, como por ejemplo madera, ¿pero eso donde va? se ha desarrollado un menu de inventario, para poder gestionar las bienes.',
+        'Conseguimos objetos, como por ejemplo madera, ¿pero eso donde va? Se ha desarrollado un menú de inventario, para poder gestionar los bienes.',
       src: '../../../assets/inventario.png',
       fecha: '07/04/2022',
       cat: 'Interfaz',
@@ -75,32 +75,32 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: '¿Hablamos un rato?',
       parrafo:
-        'A quien no le gusta una buena historia? la forma en la que te sumergiras en este viaje sera tambien gracias a porder hablar con los pueblerino o leer cartas y carteles, para ello hemos desarrollado el sistema de dialogo.',
+        'A quien no le gusta una buena historia? La forma en la que te sumergirás en este viaje será también gracias a poder hablar con los pueblerinos o leer cartas y carteles, para ello hemos desarrollado el sistema de diálogo.',
       src: '../../../assets/dialogo.gif',
       fecha: '07/04/2022',
       cat: 'Interfaz',
       color: 'border-primary',
     },
     {
-      titulo: '¡Menu!',
+      titulo: 'Menú',
       parrafo:
-        'Ahora puedes navegar por otras opciones gracias al menu que hemos agregado.',
+        'Ahora puedes navegar por otras opciones gracias al menú que hemos agregado.',
       src: '../../../assets/menu.png',
       fecha: '04/04/2022',
       cat: 'Interfaz',
       color: 'border-primary',
     },
     {
-      titulo: '¡Ya cayo la noche!',
+      titulo: 'Ya cayó la noche',
       parrafo:
-        'Como pasa el tiempo... ya hemos desarrollado el cambio entre noche y dia, junto a un reloj que te marcara la hora actual.',
+        'Como pasa el tiempo... ya hemos desarrollado el cambio entre noche y día, junto a un reloj que te marcara la hora actual.',
       src: '../../../assets/noche.gif',
       fecha: '03/04/2022',
       cat: 'Diseño',
       color: 'border-success',
     },
     {
-      titulo: '¡Hogar dulce hogar!',
+      titulo: 'Hogar dulce hogar',
       parrafo: 'Ya hemos empezado con el diseño de los establecimientos.',
       src: '../../../assets/tavern.png',
       fecha: '28/03/2022',
@@ -110,7 +110,7 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: '¡Estoy vivo!',
       parrafo:
-        'Es importante saber si estas a punto de morir o no, o cuanta experiencia te falta para subir de nivel, para ello se han incluido indicadores de vida y de experiencia.',
+        'Es importante saber si estás a punto de morir o no, o cuanta experiencia te falta para subir de nivel, para ello se han incluido indicadores de vida y de experiencia.',
       src: '../../../assets/vidayexp.png',
       fecha: '25/03/2022',
       cat: 'Interfaz',
@@ -119,16 +119,16 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: '¡Al ataque!',
       parrafo:
-        'Despues de que unos enemigos llegasen a nuestro juego, teniamos que dar la posibilidad de luchar contra ellos, hemos añadido y estamos trabajando en el ataque tanto de cerca como a distancia, tambien hemos hecho que los enemigos que mates te suelte experiencia para poder subir de nivel.',
+        'Después de que unos enemigos llegasen a nuestro juego, teníamos que dar la posibilidad de luchar contra ellos, hemos añadido y estamos trabajando en el ataque tanto de cerca como a distancia, también hemos hecho que los enemigos que mates te suelte experiencia para poder subir de nivel.',
       src: '../../../assets/ataqueExp.gif',
       fecha: '20/03/2022',
       cat: 'Jugabilidad',
       color: 'border-danger',
     },
     {
-      titulo: '¡Mirame me muevo!',
+      titulo: '¡Mírame, me muevo!',
       parrafo:
-        'Queriamos dar un toque de vida a los seres vivos de este mundo, pues eso hemos hecho dandoles animaciones ¡mira como se mueven estando quietos!',
+        'Queríamos dar un toque de vida a los seres vivos de este mundo, pues eso hemos hecho dándoles animaciones, ¡mira como se mueven estando quietos!',
       src: '../../../assets/idle.gif',
       fecha: '19/03/2022',
       cat: 'NPC',
@@ -137,14 +137,14 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: '¡A cubierto nos atacan!',
       parrafo:
-        'Se ha empezado a trabajan en el diseño y funcionamiento de los enemigos.',
+        'Se ha empezado a trabajar en el diseño y funcionamiento de los enemigos.',
       src: '../../../assets/enemigos.png',
       fecha: '17/03/2022',
       cat: 'NPC',
       color: 'border-warning',
     },
     {
-      titulo: '¡Ya estamos trabajando en el mapa!',
+      titulo: 'Estamos trabajando en el mapa',
       parrafo:
         'Necesitamos un terreno en el que andar, en el que vivir, que mirar, un mapa lo es todo en un juego.',
       src: '../../../assets/mapa.png',
@@ -153,36 +153,36 @@ export class NoticiasComponent implements OnInit {
       color: 'border-success',
     },
     {
-      titulo: '¡Ya tenemos personaje!',
+      titulo: 'Ya tenemos personaje',
       parrafo:
-        'Ya se ha creado el peronaje principal, vamos avanzando poco a poco.',
+        'Ya se ha creado el personaje principal, vamos avanzando poco a poco.',
       src: '../../../assets/pj.png',
       fecha: '03/03/2022',
       cat: 'NPC',
       color: 'border-warning',
     },
     {
-      titulo: '¡Todo vuesto!',
+      titulo: 'Todo vuestro',
       parrafo:
-        'Podreis consultar nuestra cuenta de GitHub, donde estaremos guardando todo el contenido del proyecto.',
+        'Podréis consultar nuestra cuenta de GitHub, donde estaremos guardando todo el contenido del proyecto.',
       src: '../../../assets/GitHub.png',
       fecha: '25/02/2022',
       cat: 'Desarrollo',
       color: 'border-info',
     },
     {
-      titulo: '¡Nuevo canal de YouTube!',
+      titulo: 'Nuevo canal de YouTube',
       parrafo:
-        'Hemos creado un canal de YouTube en el que podreis ir viendo como se va desarrollando el juego.',
+        'Hemos creado un canal de YouTube en el que podréis ir viendo como se va desarrollando el juego.',
       src: '../../../assets/youtube.png',
       fecha: '25/02/2022',
       cat: 'Desarrollo',
       color: 'border-info',
     },
     {
-      titulo: '¡Una nueva aventura!',
+      titulo: 'Una nueva aventura',
       parrafo:
-        'Este es el inicio de un nuevo proyecto, ¡vamos a crear un nuevo juego rpg!',
+        'Este es el inicio de un nuevo proyecto, ¡vamos a crear un nuevo juego RPG!',
       src: '../../../assets/logoRazorSinNegro.png',
       fecha: '25/02/2022',
       cat: 'Desarrollo',
