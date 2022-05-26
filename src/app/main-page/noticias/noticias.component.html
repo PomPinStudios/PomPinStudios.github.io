@@ -1,5 +1,5 @@
 <div class="fondoStatic pt-1 pb-2">
-  <div class="container bg-page px-5 pt-4 pb-5 my-3 rounded ">
+  <div class="container bg-page px-5 pt-4 pb-5 my-3 rounded">
     <div class="filtros d-lg-flex">
       <input
         type="checkbox"
@@ -8,7 +8,7 @@
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-primary rounded-pill col" for="Interfaz"
+      <label class="btn btn-outline-light rounded-pill col" for="Interfaz"
         >Interfaz</label
       >
 
@@ -19,7 +19,7 @@
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-danger rounded-pill col" for="Jugabilidad"
+      <label class="btn btn-outline-light rounded-pill col" for="Jugabilidad"
         >Jugabilidad</label
       >
 
@@ -30,7 +30,7 @@
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-warning rounded-pill col" for="NPC"
+      <label class="btn btn-outline-light rounded-pill col" for="NPC"
         >NPC</label
       >
 
@@ -41,7 +41,7 @@
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-success rounded-pill col" for="Diseño"
+      <label class="btn btn-outline-light rounded-pill col" for="Diseño"
         >Diseño</label
       >
 
@@ -52,19 +52,24 @@
         autocomplete="off"
         (click)="filtrarNoticias()"
       />
-      <label class="btn btn-outline-info rounded-pill col" for="Desarrollo"
+      <label class="btn btn-outline-light rounded-pill col" for="Desarrollo"
         >Desarrollo</label
       >
     </div>
     <div
       *ngFor="let noticia of noticiasMostrar"
-      class="noticia container bg-dark p-5 mt-3 text-light rounded border-start {{ noticia.color }}"
+      class="noticia container bg-dark p-5 mt-3 text-light rounded border-start {{
+        noticia.color
+      }}"
     >
       <div class="row">
         <div class="info col-12 col-md-6 col-lg-7 col-xl-8">
           <h3>{{ noticia.titulo }}</h3>
           <p class="fecha text-muted">
-            {{ noticia.fecha }} • <label class="linkInNoticia" for="{{ noticia.cat }}">{{ noticia.cat }}</label>
+            {{ noticia.fecha }} •
+            <label class="linkInNoticia" for="{{ noticia.cat }}">{{
+              noticia.cat
+            }}</label>
           </p>
           <p class="pt-1">
             {{ noticia.parrafo }}

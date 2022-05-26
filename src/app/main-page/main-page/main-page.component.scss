@@ -16,6 +16,22 @@
 .logoInicio img {
   width: 50vw;
 }
+.crouselHeight {
+  height: 84vh;
+}
+@media (max-width: 1350px) {
+  .crouselHeight {
+    height: unset;
+    width: 100vw;
+  }
+}
+@media (max-height: 700px) {
+  .crouselHeight {
+    height: unset;
+    width: 100vw;
+  }
+}
+
 .intro {
   background-color: #1e1e1e;
   display: grid;
